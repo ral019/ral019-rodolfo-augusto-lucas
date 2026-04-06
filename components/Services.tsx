@@ -55,25 +55,25 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
   ];
 
   return (
-    <section id="servicos" className="py-24 bg-slate-50">
+    <section id="servicos" className="py-16 bg-slate-50">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-sm font-bold text-[#FF8C00] uppercase tracking-[0.4em] mb-4">O que fazemos</h2>
-          <h3 className="text-4xl md:text-5xl font-black text-[#003366] mb-8">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h2 className="text-sm font-bold text-[#FF8C00] uppercase tracking-[0.4em] mb-3">O que fazemos</h2>
+          <h3 className="text-3xl md:text-4xl font-black text-[#003366] mb-6">
             Nossos Serviços
           </h3>
-          <p className="text-slate-500 text-lg">
+          <p className="text-slate-500 text-base">
             Soluções completas em vidros e esquadrias de alumínio para sua residência ou comércio.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-8">
           {serviceCategories.map((category, index) => (
             <div 
               key={index} 
-              className="group bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full"
+              className="group bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full"
             >
-              <div className="h-48 overflow-hidden relative">
+              <div className="h-40 overflow-hidden relative">
                 <img 
                   src={category.image} 
                   alt={category.altText}
@@ -81,24 +81,24 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
                 />
                 <div className="absolute inset-0 bg-[#003366]/60 group-hover:bg-[#003366]/40 transition-colors"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/20 backdrop-blur-md w-16 h-16 rounded-2xl flex items-center justify-center shadow-xl border border-white/30 text-white">
+                  <div className="bg-white/20 backdrop-blur-md w-14 h-14 rounded-xl flex items-center justify-center shadow-xl border border-white/30 text-white">
                     {React.cloneElement(category.icon as React.ReactElement<{ className?: string }>, { 
-                      className: "w-8 h-8" 
+                      className: "w-7 h-7" 
                     })}
                   </div>
                 </div>
               </div>
               
-              <div className="p-8 flex flex-col flex-1">
-                <h4 className="text-2xl font-black text-[#003366] mb-6 text-center">{category.title}</h4>
+              <div className="p-6 flex flex-col flex-1">
+                <h4 className="text-xl font-black text-[#003366] mb-4 text-center">{category.title}</h4>
                 
-                <ul className="space-y-5 mb-8 flex-1">
+                <ul className="space-y-4 mb-6 flex-1">
                   {category.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#FF8C00] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#FF8C00] shrink-0 mt-0.5" />
                       <div>
-                        <strong className="block text-[#003366] text-base mb-1">{item.name}</strong>
-                        <span className="text-slate-500 text-sm leading-relaxed block">{item.desc}</span>
+                        <strong className="block text-[#003366] text-xs mb-0.5">{item.name}</strong>
+                        <span className="text-slate-500 text-[10px] leading-relaxed block">{item.desc}</span>
                       </div>
                     </li>
                   ))}
@@ -108,7 +108,7 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
                   href={`https://wa.me/5519981142941?text=Olá Casa dos Vidros, quero saber mais sobre ${category.title}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 w-full bg-[#003366] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-[#FF8C00] transition-colors mt-auto"
+                  className="flex items-center justify-center gap-2 w-full bg-[#003366] text-white py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-[#FF8C00] transition-colors mt-auto"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
                   <span>Solicitar Orçamento</span>
