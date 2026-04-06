@@ -1,12 +1,10 @@
 
 import React from 'react';
 import { 
-  Maximize2, 
-  DoorClosed, 
-  Grid, 
-  Layout, 
-  Shield, 
-  Focus,
+  Hammer, 
+  Wrench, 
+  Home,
+  CheckCircle2,
   MessageCircle
 } from 'lucide-react';
 
@@ -15,42 +13,43 @@ interface ServicesProps {
 }
 
 const Services: React.FC<ServicesProps> = ({ customImages }) => {
-  const services = [
+  const serviceCategories = [
     {
-      title: "Box de Vidro",
-      description: "Modelos temperados de canto, frontais ou articulados com kits premium. Elegância e durabilidade.",
-      icon: <DoorClosed />,
-      image: customImages?.[0] || "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&q=80&w=800"
+      title: "Instalação e Montagem",
+      icon: <Hammer />,
+      image: customImages?.[0] || "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&q=80&w=800",
+      altText: "Instalação de esquadrias de alumínio e box de vidro temperado em Limeira",
+      items: [
+        { name: "Box para Banheiro", desc: "Instalação de box em vidro temperado (padrão, de canto, elegance ou articulado)." },
+        { name: "Esquadrias de Alumínio", desc: "Fabricação e instalação de janelas e portas de alumínio sob medida." },
+        { name: "Fachadas de Vidro", desc: "Montagem de vitrines de lojas e fachadas residenciais ou comerciais." },
+        { name: "Portas e Janelas de Vidro", desc: "Instalação de sistemas de correr, abrir ou pivotantes em vidro temperado." },
+        { name: "Espelhos sob Medida", desc: "Instalação de espelhos para banheiros, salas, academias e closets (com acabamento bisotê ou lapidado)." },
+        { name: "Guarda-Corpo e Corrimão", desc: "Instalação de proteções em vidro e alumínio para escadas e sacadas." }
+      ]
     },
     {
-      title: "Espelhos",
-      description: "Espelhos sob medida para banheiros, salas e closets. Acabamento lapidado ou bisotado.",
-      icon: <Maximize2 />,
-      image: customImages?.[1] || "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=80&w=800"
+      title: "Manutenção e Reparos",
+      icon: <Wrench />,
+      image: customImages?.[1] || "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
+      altText: "Manutenção de portas de vidro e esquadrias em Limeira",
+      items: [
+        { name: "Manutenção de Portas de Vidro", desc: "Ajuste de molas de piso, troca de roldanas e alinhamento de portas que estão raspando." },
+        { name: "Troca de Vidros Quebrados", desc: "Substituição rápida de vidros em janelas, portas ou coberturas." },
+        { name: "Vedação e Estanqueidade", desc: "Reparo em infiltrações de janelas e vedações de silicone ressecadas." },
+        { name: "Substituição de Acessórios", desc: "Troca de fechaduras, trincos, puxadores e dobradiças de alumínio ou inox." }
+      ]
     },
     {
-      title: "Guarda-Corpo",
-      description: "Segurança total para escadas e sacadas com vidros temperados e laminados normatizados.",
-      icon: <Shield />,
-      image: customImages?.[2] || "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      title: "Sacadas e Varandas",
-      description: "Fechamento completo com sistema retrátil. Proteção contra vento e chuva com vista total.",
-      icon: <Layout />,
-      image: customImages?.[3] || "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      title: "Fechamentos de Pia",
-      description: "Soluções em vidro para gabinetes de cozinha e banheiro. Higiene e modernidade.",
-      icon: <Grid />,
-      image: customImages?.[4] || "https://images.unsplash.com/photo-1620626011761-9963d7b69763?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      title: "Vitrines Comerciais",
-      description: "Frentes de loja e fachadas em vidro temperado de alta segurança para seu comércio.",
-      icon: <Focus />,
-      image: customImages?.[5] || "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800"
+      title: "Soluções Especializadas",
+      icon: <Home />,
+      image: customImages?.[2] || "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+      altText: "Coberturas de vidro e soluções especializadas em Limeira",
+      items: [
+        { name: "Coberturas de Vidro", desc: "Instalação de telhados de vidro laminado para áreas gourmet ou jardins de inverno." },
+        { name: "Divisórias de Ambiente", desc: "Divisórias em vidro para escritórios ou lavanderias." },
+        { name: "Pequenos Reparos Residenciais", desc: "Atendimento especializado para manutenção geral (serviço de marido de aluguel focado em acabamentos)." }
+      ]
     }
   ];
 
@@ -60,47 +59,58 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-sm font-bold text-[#FF8C00] uppercase tracking-[0.4em] mb-4">O que fazemos</h2>
           <h3 className="text-4xl md:text-5xl font-black text-[#003366] mb-8">
-            Especialistas em Soluções de Vidro
+            Nossos Serviços
           </h3>
           <p className="text-slate-500 text-lg">
-            Desde pequenos espelhos até grandes fachadas comerciais, entregamos com a qualidade que você merece.
+            Soluções completas em vidros e esquadrias de alumínio para sua residência ou comércio.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.map((service, index) => (
+        <div className="grid lg:grid-cols-3 gap-10">
+          {serviceCategories.map((category, index) => (
             <div 
               key={index} 
               className="group bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 flex flex-col h-full"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-48 overflow-hidden relative">
                 <img 
-                  src={service.image} 
-                  alt={service.title}
+                  src={category.image} 
+                  alt={category.altText}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
-                <div className="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-2 py-1 rounded-md">
-                   <span className="text-[#003366] text-[8px] font-black uppercase tracking-widest">Casa dos Vidros</span>
+                <div className="absolute inset-0 bg-[#003366]/60 group-hover:bg-[#003366]/40 transition-colors"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/20 backdrop-blur-md w-16 h-16 rounded-2xl flex items-center justify-center shadow-xl border border-white/30 text-white">
+                    {React.cloneElement(category.icon as React.ReactElement<{ className?: string }>, { 
+                      className: "w-8 h-8" 
+                    })}
+                  </div>
                 </div>
               </div>
-              <div className="p-10 flex flex-col flex-1">
-                <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-xl -mt-16 relative z-10 mb-8 border border-slate-50">
-                  {React.cloneElement(service.icon as React.ReactElement<{ className?: string }>, { 
-                    className: "w-8 h-8 text-[#FF8C00]" 
-                  })}
-                </div>
-                <h4 className="text-2xl font-black text-[#003366] mb-4">{service.title}</h4>
-                <p className="text-slate-500 text-sm leading-relaxed mb-8 flex-1">
-                  {service.description}
-                </p>
+              
+              <div className="p-8 flex flex-col flex-1">
+                <h4 className="text-2xl font-black text-[#003366] mb-6 text-center">{category.title}</h4>
+                
+                <ul className="space-y-5 mb-8 flex-1">
+                  {category.items.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-[#FF8C00] shrink-0 mt-0.5" />
+                      <div>
+                        <strong className="block text-[#003366] text-sm mb-1">{item.name}</strong>
+                        <span className="text-slate-500 text-xs leading-relaxed block">{item.desc}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
                 <a 
-                  href={`https://wa.me/5519981142941?text=Olá Casa dos Vidros, quero um orçamento para ${service.title}.`}
+                  href={`https://wa.me/5519981142941?text=Olá Casa dos Vidros, quero saber mais sobre ${category.title}.`}
                   target="_blank"
-                  className="flex items-center justify-center gap-3 w-full bg-[#003366] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-[#FF8C00] transition-colors"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 w-full bg-[#003366] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-[#FF8C00] transition-colors mt-auto"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
-                  <span>Pedir Orçamento</span>
+                  <span>Solicitar Orçamento</span>
                 </a>
               </div>
             </div>

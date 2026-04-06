@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 referrerPolicy="no-referrer"
               />
               <div className="flex flex-col">
-                <span className="text-white text-xl font-black tracking-tight leading-none">Casa dos Vidros</span>
+                <span className="text-white text-xl font-black tracking-tight leading-none uppercase">CASA DOS VIDROS</span>
                 <span className="text-[#FF8C00] text-[9px] font-bold tracking-[0.2em] uppercase mt-1">Vidraçaria e Esquadrias<br/>em Alumínio Limeira</span>
               </div>
             </div>

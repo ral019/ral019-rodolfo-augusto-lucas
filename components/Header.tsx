@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               referrerPolicy="no-referrer"
             />
             <div className="flex flex-col">
-              <span className="text-white text-xl md:text-2xl font-black tracking-tight leading-none">Casa dos Vidros</span>
+              <span className="text-white text-xl md:text-2xl font-black tracking-tight leading-none uppercase">CASA DOS VIDROS</span>
               <span className="text-[#FF8C00] text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-1">Vidraçaria e Esquadrias em Alumínio Limeira</span>
             </div>
           </a>

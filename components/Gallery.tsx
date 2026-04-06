@@ -31,7 +31,7 @@ const Gallery: React.FC<GalleryProps> = ({ customItems }) => {
               {/* Imagem de Fundo */}
               <img 
                 src={item.url} 
-                alt={item.title}
+                alt={`${item.title} instalado em Limeira - Casa dos Vidros`}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-80 group-hover:opacity-100"
               />
               
