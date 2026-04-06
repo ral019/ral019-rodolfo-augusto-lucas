@@ -20,18 +20,16 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     <header className="sticky top-0 z-50 bg-[#001f3f] border-b border-white/10 shadow-xl">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-24">
-          <a href="#" className="flex items-center gap-4 group">
-            <div className="flex items-end gap-1 mb-1">
-              <div className="w-2.5 h-12 bg-blue-500/90 rounded-sm skew-x-[-12deg] shadow-[4px_0_10px_rgba(0,0,0,0.3)]"></div>
-              <div className="w-2.5 h-10 bg-blue-400/80 rounded-sm skew-x-[-12deg] opacity-80"></div>
-              <div className="w-2.5 h-8 bg-blue-300/70 rounded-sm skew-x-[-12deg] opacity-60"></div>
-            </div>
-            <div className="relative">
-              <div className="flex flex-col">
-                <span className="text-white text-base md:text-lg font-medium leading-none">Casa dos</span>
-                <span className="text-white text-3xl md:text-4xl font-black leading-none tracking-tight">Vidros</span>
-                <span className="text-[#FF8C00] text-[10px] md:text-xs font-bold tracking-[0.3em] uppercase mt-1">Vidraçaria</span>
-              </div>
+          <a href="#" className="flex items-center gap-3 group">
+            <img 
+              src="https://i.postimg.cc/SxD6jPJp/Adobe-Express-file.png" 
+              alt="Casa dos Vidros Logo" 
+              className="h-12 md:h-16 object-contain"
+              referrerPolicy="no-referrer"
+            />
+            <div className="flex flex-col">
+              <span className="text-white text-xl md:text-2xl font-black tracking-tight leading-none">Casa dos Vidros</span>
+              <span className="text-[#FF8C00] text-[9px] md:text-[10px] font-bold tracking-widest uppercase mt-1">Vidraçaria e Esquadrias em Alumínio Limeira</span>
             </div>
           </a>
 

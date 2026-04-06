@@ -1,25 +1,23 @@
 
 import React from 'react';
-import { Instagram, MapPin, Phone, Clock, Lock } from 'lucide-react';
+import { Instagram, MapPin, Phone, Clock } from 'lucide-react';
 
-interface FooterProps {
-  onOpenLogin: () => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onOpenLogin }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-[#000d1a] text-white pt-20 pb-10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16 pb-16 border-b border-white/10">
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-8">
-              <div className="flex gap-0.5">
-                <div className="w-1.5 h-6 bg-blue-400 rounded-sm skew-x-[-15deg]"></div>
-                <div className="w-1.5 h-6 bg-blue-300 rounded-sm skew-x-[-15deg]"></div>
-              </div>
+            <div className="flex items-center gap-3 mb-8">
+              <img 
+                src="https://i.postimg.cc/SxD6jPJp/Adobe-Express-file.png" 
+                alt="Casa dos Vidros Logo" 
+                className="h-12 object-contain"
+                referrerPolicy="no-referrer"
+              />
               <div className="flex flex-col">
-                <span className="text-white font-bold text-lg leading-none uppercase">Casa dos Vidros</span>
-                <span className="text-[#FF8C00] text-[8px] font-bold tracking-widest uppercase">Vidraçaria</span>
+                <span className="text-white text-xl font-black tracking-tight leading-none">Casa dos Vidros</span>
+                <span className="text-[#FF8C00] text-[9px] font-bold tracking-[0.2em] uppercase mt-1">Vidraçaria e Esquadrias<br/>em Alumínio Limeira</span>
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-8">
@@ -46,15 +44,6 @@ const Footer: React.FC<FooterProps> = ({ onOpenLogin }) => {
               <li><a href="#diferenciais" className="hover:text-white transition-colors">Por que nós?</a></li>
               <li><a href="#galeria" className="hover:text-white transition-colors">Galeria de Obras</a></li>
               <li><a href="#contato" className="hover:text-white transition-colors">Fale Conosco</a></li>
-              <li className="pt-2">
-                <button 
-                  onClick={onOpenLogin}
-                  className="hover:text-[#FF8C00] transition-colors flex items-center gap-2 text-[10px] font-black uppercase tracking-widest opacity-40 hover:opacity-100"
-                >
-                  <Lock className="w-3 h-3" />
-                  Área Restrita
-                </button>
-              </li>
             </ul>
           </div>
 
