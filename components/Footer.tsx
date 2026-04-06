@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               <li className="flex gap-3">
                 <Clock className="w-5 h-5 text-white/40 shrink-0" />
                 <div>
-                  <p>Seg - Sex: 08:00 às 22:00</p>
+                  <p>Seg - Sex: 08:00 às 18:00</p>
                   <p>Sáb: 08:00 às 12:00</p>
                 </div>
               </li>

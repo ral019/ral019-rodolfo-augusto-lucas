@@ -71,7 +71,8 @@ const Hero: React.FC<HeroProps> = ({ customImage }) => {
                 "Box de Vidro Temperado para Banheiro",
                 "Esquadrias de Alumínio (Portas e Janelas)",
                 "Espelhos Lapidados e Sob Medida",
-                "Manutenção e Troca de Vidros"
+                "Manutenção e Troca de Vidros",
+                "Fachadas de Vidro"
               ].map((service, idx) => (
                 <div key={idx} className="flex items-center space-x-3">
                   <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">

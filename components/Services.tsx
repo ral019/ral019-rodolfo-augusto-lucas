@@ -17,7 +17,7 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
     {
       title: "Instalação e Montagem",
       icon: <Hammer />,
-      image: customImages?.[0] || "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&q=80&w=800",
+      image: customImages?.[0] || "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
       altText: "Instalação de esquadrias de alumínio e box de vidro temperado em Limeira",
       items: [
         { name: "Box para Banheiro", desc: "Instalação de box em vidro temperado (padrão, de canto, elegance ou articulado)." },
@@ -25,13 +25,14 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
         { name: "Fachadas de Vidro", desc: "Montagem de vitrines de lojas e fachadas residenciais ou comerciais." },
         { name: "Portas e Janelas de Vidro", desc: "Instalação de sistemas de correr, abrir ou pivotantes em vidro temperado." },
         { name: "Espelhos sob Medida", desc: "Instalação de espelhos para banheiros, salas, academias e closets (com acabamento bisotê ou lapidado)." },
-        { name: "Guarda-Corpo e Corrimão", desc: "Instalação de proteções em vidro e alumínio para escadas e sacadas." }
+        { name: "Guarda-Corpo e Corrimão", desc: "Instalação de proteções em vidro e alumínio para escadas e sacadas." },
+        { name: "Fechamento de Sacadas", desc: "Envidraçamento de sacadas e varandas para apartamentos e residências." }
       ]
     },
     {
       title: "Manutenção e Reparos",
       icon: <Wrench />,
-      image: customImages?.[1] || "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
+      image: customImages?.[1] || "https://i.postimg.cc/QM0zqSCB/Whats-App-Image-2026-04-06-at-17-16-28.jpg",
       altText: "Manutenção de portas de vidro e esquadrias em Limeira",
       items: [
         { name: "Manutenção de Portas de Vidro", desc: "Ajuste de molas de piso, troca de roldanas e alinhamento de portas que estão raspando." },
@@ -43,12 +44,12 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
     {
       title: "Soluções Especializadas",
       icon: <Home />,
-      image: customImages?.[2] || "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+      image: customImages?.[2] || "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800",
       altText: "Coberturas de vidro e soluções especializadas em Limeira",
       items: [
         { name: "Coberturas de Vidro", desc: "Instalação de telhados de vidro laminado para áreas gourmet ou jardins de inverno." },
         { name: "Divisórias de Ambiente", desc: "Divisórias em vidro para escritórios ou lavanderias." },
-        { name: "Pequenos Reparos Residenciais", desc: "Atendimento especializado para manutenção geral (serviço de marido de aluguel focado em acabamentos)." }
+        { name: "Pequenos Reparos Residenciais", desc: "Atendimento especializado para manutenção geral em vidros e esquadrias." }
       ]
     }
   ];
@@ -96,8 +97,8 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#FF8C00] shrink-0 mt-0.5" />
                       <div>
-                        <strong className="block text-[#003366] text-sm mb-1">{item.name}</strong>
-                        <span className="text-slate-500 text-xs leading-relaxed block">{item.desc}</span>
+                        <strong className="block text-[#003366] text-base mb-1">{item.name}</strong>
+                        <span className="text-slate-500 text-sm leading-relaxed block">{item.desc}</span>
                       </div>
                     </li>
                   ))}

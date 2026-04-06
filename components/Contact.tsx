@@ -12,8 +12,12 @@ const Contact: React.FC = () => {
           <div className="animate-fade-in">
             <h2 className="text-sm font-bold text-[#FF8C00] uppercase tracking-widest mb-4">Onde Estamos</h2>
             <h3 className="text-4xl font-extrabold text-[#003366] mb-8 leading-tight">
-              Visite-nos ou peça <br /> um orçamento agora
+              Peça seu orçamento <br /> agora mesmo
             </h3>
+            
+            <p className="text-slate-600 mb-8 leading-relaxed">
+              Atendimento ágil via WhatsApp e ligações. Realizamos visitas técnicas para medições e reuniões diretamente na sua obra ou residência em Limeira e região.
+            </p>
             
             <div className="space-y-8 mb-12">
               <a 
@@ -58,7 +62,7 @@ const Contact: React.FC = () => {
                   <div className="grid grid-cols-2 gap-6 text-sm text-slate-600">
                     <div>
                       <p className="text-slate-400 uppercase text-[10px] font-bold">Segunda a Sexta</p>
-                      <p className="font-extrabold text-[#003366]">08:00 às 22:00</p>
+                      <p className="font-extrabold text-[#003366]">08:00 às 18:00</p>
                     </div>
                     <div>
                       <p className="text-slate-400 uppercase text-[10px] font-bold">Sábado</p>

@@ -56,7 +56,7 @@ const Differentials: React.FC = () => {
                 <div className="w-6 h-6 rounded-full bg-[#FF8C00] flex items-center justify-center shrink-0 mt-1">
                   <CheckCircle2 className="w-4 h-4 text-white" />
                 </div>
-                <p className="text-slate-300">Mais de 4 avaliações 5 estrelas no Google My Business.</p>
+                <p className="text-slate-300">Excelência comprovada com avaliações 5 estrelas no Google.</p>
               </div>
             </div>
           </div>

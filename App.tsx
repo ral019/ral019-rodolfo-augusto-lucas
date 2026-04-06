@@ -26,24 +26,19 @@ export interface CustomImages {
 const DEFAULT_IMAGES: CustomImages = {
   hero: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000",
   services: [
-    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800", // Box
-    "https://images.unsplash.com/photo-1618220179428-22790b46a0eb?auto=format&fit=crop&q=80&w=800", // Espelhos
-    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800", // Guarda-Corpo
-    "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800", // Sacadas
-    "https://images.unsplash.com/photo-1556910103-1c02745a872f?auto=format&fit=crop&q=80&w=800", // Pias
-    "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&q=80&w=800"  // Vitrines
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800", // Instalação e Montagem
+    "https://i.postimg.cc/QM0zqSCB/Whats-App-Image-2026-04-06-at-17-16-28.jpg", // Manutenção e Reparos
+    "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800", // Soluções Especializadas
   ],
   gallery: [
-    { url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800", title: "Guarda-Corpo Sacada" },
-    { url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800", title: "Box de Vidro Prime" },
-    { url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800", title: "Guarda-Corpo Escada" },
-    { url: "https://images.unsplash.com/photo-1618220179428-22790b46a0eb?auto=format&fit=crop&q=80&w=800", title: "Espelho Lapidado" },
-    { url: "https://images.unsplash.com/photo-1556910103-1c02745a872f?auto=format&fit=crop&q=80&w=800", title: "Fechamento de Pia (Black)" },
+    { url: "https://i.postimg.cc/QM0zqSCB/Whats-App-Image-2026-04-06-at-17-16-28.jpg", title: "Manutenção de Esquadrias" },
+    { url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800", title: "Box de Vidro Temperado" },
     { url: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800", title: "Envidraçamento de Sacada" },
-    { url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=800", title: "Armários sob Pia" },
-    { url: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&q=80&w=800", title: "Vitrines Comerciais" },
-    { url: "https://images.unsplash.com/photo-1600566753086-00f18efc2207?auto=format&fit=crop&q=80&w=800", title: "Portas de Vidro de Correr" },
-    { url: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?auto=format&fit=crop&q=80&w=800", title: "Guarda-Corpo de Vidro Verde" }
+    { url: "https://images.unsplash.com/photo-1618220179428-22790b46a0eb?auto=format&fit=crop&q=80&w=800", title: "Espelho Lapidado" },
+    { url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000", title: "Fachada de Vidro" },
+    { url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800", title: "Guarda-Corpo Sacada" },
+    { url: "https://images.unsplash.com/photo-1556910103-1c02745a872f?auto=format&fit=crop&q=80&w=800", title: "Fechamento de Pia" },
+    { url: "https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&q=80&w=800", title: "Vitrine Comercial" }
   ]
 };
 
