@@ -7,7 +7,7 @@ const Differentials: React.FC = () => {
   const items = [
     {
       title: "Entrega no Prazo",
-      desc: "Respeitamos o cronograma da sua opera com pontualidade rigorosa.",
+      desc: "Respeitamos o cronograma da sua obra com pontualidade rigorosa.",
       icon: <Truck className="w-10 h-10 text-white" />,
       color: "bg-[#003366]"
     },

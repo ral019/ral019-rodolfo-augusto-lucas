@@ -55,9 +55,9 @@ const App: React.FC = () => {
       
       <main>
         <Hero customImage={images.hero} />
+        <Gallery />
         <Services customImages={images.services} />
         <Differentials />
-        <Gallery />
         <Contact />
       </main>
 
