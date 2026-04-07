@@ -10,9 +10,9 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
   const navLinks = [
     { name: 'Início', href: '#' },
+    { name: 'Galeria', href: '#galeria' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Diferenciais', href: '#diferenciais' },
-    { name: 'Galeria', href: '#galeria' },
     { name: 'Contato', href: '#contato' },
   ];
 
