@@ -108,9 +108,14 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
                   href={`https://wa.me/5519981142941?text=Olá Casa dos Vidros, quero saber mais sobre ${category.title}.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full bg-[#003366] text-white py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-[#FF8C00] transition-colors mt-auto"
+                  className="flex items-center justify-center gap-3 w-full bg-[#003366] text-white py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-[#25D366] transition-colors mt-auto"
                 >
-                  <MessageCircle className="w-4 h-4 fill-white" />
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                    alt="WhatsApp" 
+                    className="w-4 h-4"
+                    referrerPolicy="no-referrer"
+                  />
                   <span>Solicitar Orçamento</span>
                 </a>
               </div>

@@ -47,9 +47,14 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               href="https://wa.me/5519981142941" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-[#FF8C00] text-white px-6 py-3 rounded-xl text-sm font-bold flex items-center space-x-2 hover:bg-[#e67e00] transition-all transform hover:-translate-y-1 shadow-lg shadow-orange-900/40"
+              className="bg-[#25D366] text-white px-6 py-3 rounded-xl text-sm font-bold flex items-center space-x-2 hover:bg-[#20bd5a] transition-all transform hover:-translate-y-1 shadow-lg shadow-green-900/20"
             >
-              <MessageCircle className="w-4 h-4" />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-5 h-5"
+                referrerPolicy="no-referrer"
+              />
               <span>Orçamento WhatsApp</span>
             </a>
           </nav>
@@ -78,9 +83,15 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             ))}
             <a 
               href="https://wa.me/5519981142941" 
-              className="block w-full text-center bg-green-500 text-white px-5 py-5 rounded-2xl font-black text-xl shadow-xl shadow-green-900/30"
+              className="flex items-center justify-center gap-3 w-full text-center bg-[#25D366] text-white px-5 py-5 rounded-2xl font-black text-xl shadow-xl shadow-green-900/30"
               onClick={() => setIsMenuOpen(false)}
             >
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-7 h-7"
+                referrerPolicy="no-referrer"
+              />
               CHAMAR NO WHATSAPP
             </a>
           </div>

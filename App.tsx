@@ -71,9 +71,14 @@ const App: React.FC = () => {
           href="https://wa.me/5519981142941" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-green-500 text-white p-5 rounded-full shadow-[0_10px_40px_rgba(34,197,94,0.4)] hover:bg-green-600 transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center border-4 border-white"
+          className="bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(34,197,94,0.4)] hover:bg-[#20bd5a] transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center border-4 border-white"
         >
-          <MessageCircle className="w-9 h-9 fill-current" />
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+            alt="WhatsApp" 
+            className="w-10 h-10"
+            referrerPolicy="no-referrer"
+          />
         </a>
       </div>
     </div>

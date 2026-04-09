@@ -42,10 +42,15 @@ const Gallery: React.FC = () => {
           </p>
           <a 
             href="https://wa.me/5519981142941" 
-            className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-black text-lg uppercase tracking-wider transition-all transform hover:scale-105 shadow-2xl shadow-green-900/40"
+            className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg uppercase tracking-wider transition-all transform hover:scale-105 shadow-2xl shadow-green-900/40"
           >
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+              alt="WhatsApp" 
+              className="w-6 h-6"
+              referrerPolicy="no-referrer"
+            />
             <span>Enviar meu Projeto</span>
-            <MessageCircle className="w-5 h-5 fill-white" />
           </a>
         </div>
       </div>

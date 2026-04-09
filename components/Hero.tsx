@@ -46,7 +46,12 @@ const Hero: React.FC<HeroProps> = ({ customImage }) => {
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-xl font-bold text-center transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl shadow-green-900/30 text-sm md:text-base"
             >
-              <MessageCircle className="w-5 h-5" />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-6 h-6"
+                referrerPolicy="no-referrer"
+              />
               <span>Solicitar Orçamento no WhatsApp</span>
             </a>
             <a 

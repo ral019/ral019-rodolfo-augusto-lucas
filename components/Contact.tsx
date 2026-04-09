@@ -75,9 +75,14 @@ const Contact: React.FC = () => {
             <a 
               href="https://wa.me/5519981142941"
               target="_blank"
-              className="w-full inline-flex items-center justify-center space-x-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-xl shadow-green-200 text-lg uppercase tracking-wider transform hover:scale-[1.01] active:scale-95"
+              className="w-full inline-flex items-center justify-center space-x-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-bold transition-all shadow-xl shadow-green-200 text-lg uppercase tracking-wider transform hover:scale-[1.01] active:scale-95"
             >
-              <MessageCircle className="w-6 h-6 fill-white" />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-6 h-6"
+                referrerPolicy="no-referrer"
+              />
               <span>Solicitar Orçamento Grátis</span>
             </a>
           </div>

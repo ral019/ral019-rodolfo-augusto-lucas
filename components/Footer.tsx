@@ -75,9 +75,14 @@ const Footer: React.FC = () => {
             </p>
             <a 
               href="https://wa.me/5519981142941"
-              className="inline-flex w-full items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-all text-xs uppercase tracking-wider shadow-lg shadow-green-900/40"
+              className="inline-flex w-full items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#20bd5a] transition-all text-xs uppercase tracking-wider shadow-lg shadow-green-900/40"
             >
-              <Phone className="w-3 h-3" />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-4 h-4"
+                referrerPolicy="no-referrer"
+              />
               <span>Chamar no WhatsApp</span>
             </a>
           </div>
