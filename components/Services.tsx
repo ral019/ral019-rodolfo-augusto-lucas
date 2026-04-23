@@ -7,6 +7,7 @@ import {
   CheckCircle2,
   MessageCircle
 } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 interface ServicesProps {
   customImages?: string[];
@@ -108,6 +109,7 @@ const Services: React.FC<ServicesProps> = ({ customImages }) => {
                   href={`https://wa.me/5519981142941?text=Olá Casa dos Vidros, quero saber mais sobre ${category.title}.`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsAppClick(`services_category_${category.title}`)}
                   className="flex items-center justify-center gap-3 w-full bg-[#003366] text-white py-3 rounded-xl font-bold uppercase tracking-widest text-[10px] hover:bg-[#25D366] transition-colors mt-auto"
                 >
                   <img 

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -47,6 +48,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
               href="https://wa.me/5519981142941" 
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('header_desktop')}
               className="bg-[#25D366] text-white px-6 py-3 rounded-xl text-sm font-bold flex items-center space-x-2 hover:bg-[#20bd5a] transition-all transform hover:-translate-y-1 shadow-lg shadow-green-900/20"
             >
               <img 
@@ -84,7 +86,10 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
             <a 
               href="https://wa.me/5519981142941" 
               className="flex items-center justify-center gap-3 w-full text-center bg-[#25D366] text-white px-5 py-5 rounded-2xl font-black text-xl shadow-xl shadow-green-900/30"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => {
+                trackWhatsAppClick('header_mobile');
+                setIsMenuOpen(false);
+              }}
             >
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 

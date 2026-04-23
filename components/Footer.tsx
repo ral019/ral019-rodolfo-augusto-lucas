@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, MapPin, Phone, Clock } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 const Footer: React.FC = () => {
   return (
@@ -75,6 +76,7 @@ const Footer: React.FC = () => {
             </p>
             <a 
               href="https://wa.me/5519981142941"
+              onClick={() => trackWhatsAppClick('footer_section')}
               className="inline-flex w-full items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#20bd5a] transition-all text-xs uppercase tracking-wider shadow-lg shadow-green-900/40"
             >
               <img 

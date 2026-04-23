@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { MapPin, Phone, Clock, MessageCircle, ExternalLink } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 const Contact: React.FC = () => {
   const mapUrl = "https://www.google.com/maps/place/Casa+dos+vidros+Vidra%C3%A7aria+Limeira/@-22.5685766,-47.4537811,17z/data=!3m1!4b1!4m6!3m5!1s0x94c88107450ce4a7:0xeb4a67caa8c6d05a!8m2!3d-22.5685767!4d-47.4489155!16s%2Fg%2F11jt5bzpg1";
@@ -75,6 +76,7 @@ const Contact: React.FC = () => {
             <a 
               href="https://wa.me/5519981142941"
               target="_blank"
+              onClick={() => trackWhatsAppClick('contact_section')}
               className="w-full inline-flex items-center justify-center space-x-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-bold transition-all shadow-xl shadow-green-200 text-lg uppercase tracking-wider transform hover:scale-[1.01] active:scale-95"
             >
               <img 

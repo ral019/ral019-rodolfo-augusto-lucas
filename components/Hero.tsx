@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, Star, CheckCircle2, MessageCircle } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 interface HeroProps {
   customImage?: string;
@@ -44,6 +45,7 @@ const Hero: React.FC<HeroProps> = ({ customImage }) => {
               href="https://wa.me/5519981142941" 
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('hero_section')}
               className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3 rounded-xl font-bold text-center transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl shadow-green-900/30 text-sm md:text-base"
             >
               <img 

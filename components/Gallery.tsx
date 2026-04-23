@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { Camera, MessageCircle } from 'lucide-react';
+import { trackWhatsAppClick } from '../services/analytics';
 
 const Gallery: React.FC = () => {
   useEffect(() => {
@@ -42,6 +43,7 @@ const Gallery: React.FC = () => {
           </p>
           <a 
             href="https://wa.me/5519981142941" 
+            onClick={() => trackWhatsAppClick('gallery_section')}
             className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-4 rounded-xl font-black text-lg uppercase tracking-wider transition-all transform hover:scale-105 shadow-2xl shadow-green-900/40"
           >
             <img 

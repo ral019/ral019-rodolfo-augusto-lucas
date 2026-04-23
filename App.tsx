@@ -11,6 +11,8 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import { trackWhatsAppClick } from './services/analytics';
+
 export interface GalleryItem {
   url: string;
   title: string;
@@ -71,6 +73,7 @@ const App: React.FC = () => {
           href="https://wa.me/5519981142941" 
           target="_blank" 
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick('floating_button')}
           className="bg-[#25D366] text-white p-4 rounded-full shadow-[0_10px_40px_rgba(34,197,94,0.4)] hover:bg-[#20bd5a] transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center border-4 border-white"
         >
           <img 
